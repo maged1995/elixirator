@@ -8,7 +8,7 @@ ARGV[1..].each_with_index { |val,index|
     if (index.even?)
         launchLand = val.to_sym
     else
-        tripSequence.push([launchLand, val.to_f])
+        tripsSequence.push([launchLand, val.to_f])
     end
 }
 
