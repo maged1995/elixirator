@@ -1,7 +1,7 @@
 require './CalcFuel'
 
 shipWeight = ARGV[0].tr(',', '').to_i
-tripSequence = []
+tripsSequence = []
 ll = ''
 
 ARGV[1..].each_with_index { |val,index|
@@ -12,4 +12,4 @@ ARGV[1..].each_with_index { |val,index|
     end
 }
 
-puts send('CalcRequiredFuel', shipWeight, tripSequence)
+puts CalcRequiredFuel(shipWeight, tripsSequence)
